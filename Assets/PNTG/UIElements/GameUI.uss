@@ -1,0 +1,25 @@
+.unity-label {
+    margin: 0;
+    padding: 0;
+}
+
+.unity-button {
+    margin: 0;
+    border-width: 0;
+}
+
+.unity-button:hover {
+    background-color: rgb(150, 40, 40);
+}
+
+.unity-button:active {
+    background-color: rgb(100, 30, 30);
+}
+
+#GameContainer {
+    background-image: none;
+}
+
+#NumberBackground {
+    -unity-background-scale-mode: scale-to-fit;
+}

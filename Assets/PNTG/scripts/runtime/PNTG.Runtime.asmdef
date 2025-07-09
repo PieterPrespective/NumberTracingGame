@@ -1,0 +1,18 @@
+{
+    "name": "PNTG.Runtime",
+    "rootNamespace": "PNTG",
+    "references": [
+        "Unity.InputSystem",
+        "Unity.Collections",
+        "Unity.Mathematics"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

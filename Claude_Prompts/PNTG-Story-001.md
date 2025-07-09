@@ -1,0 +1,24 @@
+- IssueID = PNTG-Story-001
+- Target Folder = Assets/PNTG
+- Please read 'Claude_Prompts/PNTGBasePrompt.md' for project context
+- Create the Core feature(s) for the shape tracing game
+	- The UI features should be build within UIElements/UIToolkit
+	- For reference - see the shapes of the numbers (0-3) to be included in the initial setup (matching those taught on school)
+		- Number 0 - 'Claude_Prompts/Numbers/Trace_0_Instruction.JPG'
+		- Number 1 - 'Claude_Prompts/Numbers/Trace_1_Instruction.JPG'
+		- Number 2 - 'Claude_Prompts/Numbers/Trace_2_Instruction.JPG'
+		- Number 3 - 'Claude_Prompts/Numbers/Trace_2_Instruction.JPG'
+	- Particularly note: 
+		- the shape of the numbers, both curved and straight
+		- the number of strokes (indicated by the number next to the arrow)
+		- the directionality of the strokes (indicated by the arrow directionality)
+	- Feature 1: Intended stroke indication (+ Scriptable Object database with settings per number/shape) - stroke indication should be a transperant overlay over the background image, indicating the intended stroke location, shape and directionality:
+		- Please use the UIElements Painter2D to draw this overlay
+		- Preferably describe the form of this overlay as 2D NURBS curve
+		- The developer should be able to create, update, remove, additional control points in play mode – changed data should be updated/stored in the scriptable object
+		- Users should be allowed a modicum of inaccuracy – a wobble radius around the stroke should be allowed – this radius should be visualized using a filled outline around the source stroke line (we’ll refer to this as the ‘wobble radius’
+		- While the user is tracing, the ‘wobble radius’ should change color/ fill up the shape with a different color matching the progression of the stroke
+	- Feature 2: Overal Game UI with scoring field & quit application button
+	- Feature 3: gameplay loop controller - responsible for loading the number background image, loading the stroke indication and after shape completion attributing score and loading the next number
+	- Please create a demo scene for the game
+		- Create an UIElements document with a UXML that visualizes the shape of the number ‘2’ – this shape should consist of a single stroke with a wobble allowance of 20 pixels in both directions.

@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__chroma__chroma_list_collections",
+      "mcp__umcp-docker__GetUnityClientState",
+      "mcp__chroma__chroma_create_collection",
+      "mcp__chroma__chroma_add_documents",
+      "mcp__umcp-docker__MarkStartOfNewStep",
+      "Bash(mkdir:*)",
+      "mcp__umcp-docker__ForceUpdateEditor",
+      "mcp__umcp-docker__RequestStepLogs",
+      "mcp__umcp-docker__ExecuteMenuItem",
+      "mcp__umcp-docker__ReadConsole",
+      "mcp__umcp-docker__ManageScene",
+      "mcp__umcp-docker__GetTests",
+      "mcp__umcp-docker__RunTests",
+      "Bash(find:*)",
+      "Bash(cp:*)",
+      "mcp__chroma__chroma_update_documents"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "chroma",
+    "umcp-docker"
+  ]
+}
