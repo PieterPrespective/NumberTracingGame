@@ -1,0 +1,5 @@
+- IssueID = PNTG-Story-003
+- Target Folder = Assets/PNTG
+- Please read 'Claude_Prompts/PNTGBasePrompt.md' for project context
+- The tracing for all numbers works, however when the endpoints of a stroke (start and end) lie close together the application detects the shape as completed before completing the actual trace (e.g. when drawing an 8 it triggers completion when you only draw the bottom half of the number)
+- Can you please implement a change in the tracing system - to prevent premature completion of strokes, prevent making too big steps (jumps) in progression?

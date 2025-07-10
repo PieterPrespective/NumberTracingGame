@@ -32,6 +32,7 @@ namespace PNTG
         [SerializeField] private Color progressColor = Color.green;
         [SerializeField] private Color completedColor = new Color(1f, 0.5f, 0f, 0.8f); // Orange
         [SerializeField] private Color wobbleColor = new Color(0.8f, 0.8f, 0.8f, 0.5f);
+        [SerializeField] private float checkpointInterval = 0.1f; // Interval between checkpoints (0.1 = 10% of stroke length)
         
         public NURBSControlPoint[] ControlPoints => controlPoints;
         public int Degree => degree;
@@ -40,6 +41,7 @@ namespace PNTG
         public Color ProgressColor => progressColor;
         public Color CompletedColor => completedColor;
         public Color WobbleColor => wobbleColor;
+        public float CheckpointInterval => checkpointInterval;
         
         public StrokeData()
         {

@@ -311,11 +311,11 @@ namespace PNTG
                 
                 var result = StrokeInputValidator.ValidateInput(currentStrokeData, inputParams);
                 
-                Debug.Log("Result: " + result.isValid + ", Progress: " + result.progress + ", Distance: " + result.distanceFromStroke + " isPressed: " + isPressed);
+                Debug.Log($"Result: {result.isValid}, Progress: {result.progress:F3}, Visual: {result.visualProgress:F3}, Distance: {result.distanceFromStroke:F1}, isPressed: {isPressed}");
 
                 if (result.isValid)
                 {
-                    currentStrokeVisual.Progress = result.progress;
+                    currentStrokeVisual.Progress = result.visualProgress;
                     currentStrokeVisual.AddTracePoint(uiPosition);
                     
                     // Check if stroke is completed

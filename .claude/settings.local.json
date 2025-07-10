@@ -18,7 +18,8 @@
       "Bash(cp:*)",
       "mcp__chroma__chroma_update_documents",
       "mcp__chroma__chroma_query_documents",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(grep:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
