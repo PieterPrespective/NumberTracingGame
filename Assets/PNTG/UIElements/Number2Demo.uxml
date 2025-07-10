@@ -1,15 +1,15 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/PNTG/UIElements/GameUI.uss?fileID=7433441132597879392&amp;guid=8b9d8e8f8b9d8e8f8b9d8e8f8b9d8e8f&amp;type=3#GameUI" />
+    <Style src="project://database/Assets/PNTG/UIElements/GameUI.uss?fileID=7433441132597879392&amp;guid=78ce141567383fd41b88a76e2bddd0d8&amp;type=3#GameUI" />
     <ui:VisualElement name="DemoContainer" style="flex-grow: 1; background-color: rgb(240, 240, 240); align-items: center; justify-content: center;">
         <ui:VisualElement name="Number2Container" style="width: 600px; height: 800px; background-color: rgb(255, 255, 255); border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(200, 200, 200); border-right-color: rgb(200, 200, 200); border-top-color: rgb(200, 200, 200); border-bottom-color: rgb(200, 200, 200);">
-            <ui:Label text="Number 2 - Single Stroke Demo" display-tooltip-when-elided="true" style="font-size: 24px; -unity-text-align: upper-center; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px; -unity-font-style: bold;" />
+            <ui:Label text="Teken het onderstaande nummer" display-tooltip-when-elided="true" name="MainTitle" style="font-size: 24px; -unity-text-align: upper-center; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px; -unity-font-style: bold;" />
             <ui:VisualElement name="StrokeArea" style="flex-grow: 1; margin-left: 40px; margin-right: 40px; margin-top: 20px; margin-bottom: 40px; position: relative;">
-                <ui:VisualElement name="Number2Background" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;">
-                    <ui:Label text="2" display-tooltip-when-elided="true" style="font-size: 400px; -unity-text-align: middle-center; color: rgba(0, 0, 0, 0.1); position: absolute; left: 0; top: 0; right: 0; bottom: 0;" />
+                <ui:VisualElement name="Number2Background" enabled="true" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;">
+                    <ui:Label display-tooltip-when-elided="true" name="NumberDisplay" enabled="true" style="font-size: 400px; -unity-text-align: middle-center; color: rgba(0, 0, 0, 0.1); position: absolute; left: 0; top: 0; right: 0; bottom: 0;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="StrokeOverlay" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;" />
             </ui:VisualElement>
-            <ui:Label text="Wobble Radius: 20 pixels" display-tooltip-when-elided="true" style="font-size: 18px; -unity-text-align: upper-center; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 20px; color: rgb(100, 100, 100);" />
+            <ui:Label text="Spacer" display-tooltip-when-elided="true" style="font-size: 18px; -unity-text-align: upper-center; padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 20px; color: rgba(255, 255, 255, 0);" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

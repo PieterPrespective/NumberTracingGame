@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea612d0276ceb74fb38493ea4b9ada7, type: 3}
   m_Name: Number9Config
   m_EditorClassIdentifier: 
-  numberName: 2
+  numberName: 9
   backgroundImage: {fileID: 21300000, guid: 51a055d94b9336242ba1fd4201fc94f5, type: 3}
   strokes:
   - controlPoints:
@@ -42,6 +42,7 @@ MonoBehaviour:
     progressColor: {r: 0, g: 1, b: 0, a: 1}
     completedColor: {r: 1, g: 0.5, b: 0, a: 0.8}
     wobbleColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
+    checkpointInterval: 0.1
   - controlPoints:
     - position: {x: 395, y: 240.9}
       weight: 1
@@ -57,4 +58,5 @@ MonoBehaviour:
     progressColor: {r: 0, g: 1, b: 0, a: 1}
     completedColor: {r: 1, g: 0.5, b: 0, a: 0.8}
     wobbleColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
+    checkpointInterval: 0.1
   scoreValue: 1

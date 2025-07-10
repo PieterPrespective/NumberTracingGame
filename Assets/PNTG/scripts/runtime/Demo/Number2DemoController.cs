@@ -17,6 +17,8 @@ namespace PNTG
         
         private UIDocument uiDocument;
         private VisualElement strokeOverlay;
+        private Label mainTitle;
+        private Label numberDisplay;
         private List<StrokeVisualElement> allStrokeVisuals = new List<StrokeVisualElement>();
         private StrokeVisualElement currentStrokeVisual;
         private StrokeData currentStrokeData;
@@ -35,11 +37,33 @@ namespace PNTG
             
             var root = uiDocument.rootVisualElement;
             strokeOverlay = root.Q<VisualElement>("StrokeOverlay");
+            mainTitle = root.Q<Label>("MainTitle");
+            numberDisplay = root.Q<Label>("NumberDisplay");
             
             if (strokeOverlay == null)
             {
                 Debug.LogError("StrokeOverlay element not found!");
                 return;
+            }
+            
+            if (mainTitle == null)
+            {
+                Debug.LogError("MainTitle element not found in UXML!");
+                return;
+            }
+            else
+            {
+                Debug.Log("MainTitle element found successfully");
+            }
+            
+            if (numberDisplay == null)
+            {
+                Debug.LogError("NumberDisplay element not found in UXML!");
+                return;
+            }
+            else
+            {
+                Debug.Log("NumberDisplay element found successfully");
             }
             
             LoadNumberConfiguration();
@@ -54,12 +78,17 @@ namespace PNTG
                 return;
             }
             
+            Debug.Log($"Loading NumberConfiguration: {numberConfig.name}, NumberName: '{numberConfig.NumberName}'");
+            
             if (numberConfig.Strokes == null || numberConfig.Strokes.Length == 0)
             {
                 Debug.LogError("NumberConfiguration has no strokes! Please configure at least one stroke.");
                 CreateFallbackStroke();
                 return;
             }
+            
+            // Update UI text based on NumberConfiguration
+            UpdateUIText();
             
             // Set background image if available
             SetBackgroundImage(numberConfig.BackgroundImage);
@@ -318,6 +347,9 @@ namespace PNTG
                 
                 // Update background image if changed
                 SetBackgroundImage(numberConfig.BackgroundImage);
+                
+                // Update UI text
+                UpdateUIText();
             }
         }
         
@@ -344,6 +376,28 @@ namespace PNTG
             backgroundElement.style.unityBackgroundScaleMode = ScaleMode.ScaleToFit;
             
             Debug.Log($"Background image set: {backgroundSprite.name}");
+        }
+        
+        private void UpdateUIText()
+        {
+            if (numberConfig == null || mainTitle == null || numberDisplay == null)
+            {
+                Debug.LogWarning($"UpdateUIText failed - numberConfig: {numberConfig != null}, mainTitle: {mainTitle != null}, numberDisplay: {numberDisplay != null}");
+                return;
+            }
+            
+            // Get the number name, use fallback if null or empty
+            string numberName = string.IsNullOrEmpty(numberConfig.NumberName) ? "2" : numberConfig.NumberName;
+            Debug.Log($"NumberName from config: '{numberConfig.NumberName}', using: '{numberName}'");
+                
+            // Update main title with Dutch text and number name
+            string titleText = $"Teken het onderstaande nummer {numberName}";
+            mainTitle.text = titleText;
+            Debug.Log($"Set mainTitle.text to: '{titleText}', actual text now: '{mainTitle.text}'");
+            
+            // Update the large number display in the center
+            numberDisplay.text = numberName;
+            Debug.Log($"Set numberDisplay.text to: '{numberName}', actual text now: '{numberDisplay.text}'");
         }
         
         private void OnGUI()

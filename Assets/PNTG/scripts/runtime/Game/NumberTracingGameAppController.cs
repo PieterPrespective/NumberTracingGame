@@ -22,6 +22,7 @@ namespace PNTG
         private VisualElement completePopup;
         private Label scoreLabel;
         private Button quitButton;
+        private CelebrationVisualElement celebrationElement;
         
         private List<StrokeVisualElement> allStrokeVisuals = new List<StrokeVisualElement>();
         private StrokeVisualElement currentStrokeVisual;
@@ -76,7 +77,7 @@ namespace PNTG
             scoreLabel = new Label($"Score: {score}");
             scoreLabel.name = "ScoreLabel";
             scoreLabel.style.fontSize = 32;
-            scoreLabel.style.color = Color.white;
+            scoreLabel.style.color = Color.blue;
             scoreLabel.style.unityFontStyleAndWeight = FontStyle.Bold;
             scoreLabel.style.marginRight = 20;
             hudContainer.Add(scoreLabel);
@@ -118,10 +119,21 @@ namespace PNTG
             completePopup.Add(popupLabel);
             
             rootElement.Add(completePopup);
+            
+            // Create celebration visual element (above popup)
+            celebrationElement = new CelebrationVisualElement();
+            celebrationElement.name = "CelebrationElement";
+            rootElement.Add(celebrationElement);
         }
         
         private void LoadNextNumber()
         {
+            // Stop any active celebration
+            if (celebrationElement != null)
+            {
+                celebrationElement.StopCelebration();
+            }
+            
             if (numberConfigs == null || numberConfigs.Count == 0)
             {
                 Debug.LogError("No NumberConfigurations assigned! Please assign at least one NumberConfiguration ScriptableObject.");
@@ -374,19 +386,25 @@ namespace PNTG
         {
             Debug.Log($"Number {currentNumberConfig.NumberName} completed!");
             
-            // Increment score
-            score++;
+            // Increment score by the number's score value
+            score += currentNumberConfig.ScoreValue;
             UpdateScoreDisplay();
             
-            // Show completion popup
+            // Show completion popup and celebration
             ShowCompletionPopup();
+            
+            // Start celebration animation
+            if (celebrationElement != null)
+            {
+                celebrationElement.StartCelebration();
+            }
             
             // Clear current stroke references
             currentStrokeVisual = null;
             currentStrokeData = null;
             
-            // Load next number after delay
-            StartCoroutine(LoadNextNumberAfterDelay(3f));
+            // Load next number after delay (longer to enjoy celebration)
+            StartCoroutine(LoadNextNumberAfterDelay(5f));
         }
         
         private void UpdateScoreDisplay()
@@ -503,6 +521,8 @@ namespace PNTG
             Debug.Log($"Background image set: {backgroundSprite.name}");
         }
         
+        // Debug info panel - commented out for cleaner gameplay experience
+        /*
         private void OnGUI()
         {
             // Draw control panel
@@ -541,5 +561,6 @@ namespace PNTG
                 GUI.Label(new Rect(20, 265, 300, 20), $"Numbers in Game: {numberConfigs.Count}");
             }
         }
+        */
     }
 }
