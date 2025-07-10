@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea612d0276ceb74fb38493ea4b9ada7, type: 3}
+  m_Name: Number8Config
+  m_EditorClassIdentifier: 
+  numberName: 2
+  backgroundImage: {fileID: 21300000, guid: 2a233de057516a948a9821286a767600, type: 3}
+  strokes:
+  - controlPoints:
+    - position: {x: 237.5, y: 258.3}
+      weight: 1
+    - position: {x: 156.2, y: 294.6}
+      weight: 1
+    - position: {x: 80.7, y: 405.8}
+      weight: 1
+    - position: {x: 121.9, y: 537.1}
+      weight: 1
+    - position: {x: 236.8, y: 569.6}
+      weight: 1
+    - position: {x: 346.9, y: 522.1}
+      weight: 1
+    - position: {x: 383.2, y: 411.9}
+      weight: 1
+    - position: {x: 282.4, y: 284.9}
+      weight: 1
+    - position: {x: 174.9, y: 181.9}
+      weight: 1
+    - position: {x: 174.6, y: 100.4}
+      weight: 1
+    - position: {x: 225.9, y: 35.2}
+      weight: 1
+    - position: {x: 313.6, y: 16.7}
+      weight: 1
+    - position: {x: 403.2, y: 45.9}
+      weight: 1
+    - position: {x: 440.1, y: 145.4}
+      weight: 1
+    - position: {x: 380.5, y: 255.7}
+      weight: 1
+    - position: {x: 291.8, y: 304.1}
+      weight: 1
+    degree: 3
+    wobbleRadius: 40
+    strokeColor: {r: 0, g: 0, b: 0, a: 1}
+    progressColor: {r: 0, g: 1, b: 0, a: 1}
+    completedColor: {r: 1, g: 0.5, b: 0, a: 0.8}
+    wobbleColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
+  scoreValue: 1

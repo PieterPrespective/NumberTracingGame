@@ -16,7 +16,9 @@
       "mcp__umcp-docker__RunTests",
       "Bash(find:*)",
       "Bash(cp:*)",
-      "mcp__chroma__chroma_update_documents"
+      "mcp__chroma__chroma_update_documents",
+      "mcp__chroma__chroma_query_documents",
+      "Bash(rm:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

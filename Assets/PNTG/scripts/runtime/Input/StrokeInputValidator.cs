@@ -46,6 +46,7 @@ namespace PNTG
         {
             if (stroke == null || stroke.ControlPoints.Length < 2)
             {
+                Debug.LogWarning("Invalid stroke data provided for validation.");
                 return new StrokeValidationResult
                 {
                     isValid = false,
@@ -99,19 +100,22 @@ namespace PNTG
                     }
                 }
                 
+                Debug.Log("tracking: " + tracker.isTracking + ", parameter: " + tracker.currentParameter);
+
                 result.isValid = tracker.isTracking;
                 result.progress = tracker.currentParameter;
                 result.isComplete = tracker.currentParameter > 0.95f;
             }
             else if (!input.isPressed || !withinRadius)
             {
+
                 // Reset if released or moved too far
                 if (tracker.isTracking && !result.isComplete)
                 {
                     tracker.isTracking = false;
                     tracker.currentParameter = 0f;
                 }
-                
+                Debug.Log("not tracking, reset progress");
                 result.isValid = false;
             }
             

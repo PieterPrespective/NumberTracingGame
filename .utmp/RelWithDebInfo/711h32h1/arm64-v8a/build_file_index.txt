@@ -1,0 +1,2 @@
+C:\Prespective\GIT\Git-NumberTracingGame\NumberTracingGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Prespective\GIT\Git-NumberTracingGame\NumberTracingGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

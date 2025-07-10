@@ -16,35 +16,35 @@ MonoBehaviour:
   backgroundImage: {fileID: 21300000, guid: c8314d8a4b640724bb70f5a557b5aef6, type: 3}
   strokes:
   - controlPoints:
-    - position: {x: 169.4, y: 102.7}
+    - position: {x: 164.8, y: 104.6}
       weight: 1
-    - position: {x: 308.3, y: -56.2}
+    - position: {x: 308.3, y: -41.3}
       weight: 1
-    - position: {x: 489.9, y: 149.4}
+    - position: {x: 519.9, y: 148.8}
       weight: 1
-    - position: {x: 275.4, y: 340.4}
+    - position: {x: 275.4, y: 400.7}
       weight: 1
-    - position: {x: 157.7, y: 465.5}
+    - position: {x: 157.7, y: 524.8}
       weight: 1
-    - position: {x: 104.7, y: 516.6}
+    - position: {x: 93.6, y: 582.6}
       weight: 1
     degree: 3
-    wobbleRadius: 30
+    wobbleRadius: 40
     strokeColor: {r: 0, g: 0, b: 0, a: 1}
     progressColor: {r: 0, g: 1, b: 0, a: 1}
     completedColor: {r: 1, g: 0.5, b: 0, a: 0.8}
     wobbleColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
   - controlPoints:
-    - position: {x: 109.1, y: 517.8}
+    - position: {x: 96.8, y: 577.1}
       weight: 1
-    - position: {x: 275.6, y: 367.5}
+    - position: {x: 291, y: 443.2}
       weight: 1
-    - position: {x: 278.7, y: 597.5}
+    - position: {x: 278.7, y: 687.2}
       weight: 1
-    - position: {x: 403.4, y: 472}
+    - position: {x: 425.8, y: 543.4}
       weight: 1
     degree: 3
-    wobbleRadius: 30
+    wobbleRadius: 40
     strokeColor: {r: 0, g: 0, b: 0, a: 1}
     progressColor: {r: 0, g: 1, b: 0, a: 1}
     completedColor: {r: 1, g: 0.5, b: 0, a: 0.8}

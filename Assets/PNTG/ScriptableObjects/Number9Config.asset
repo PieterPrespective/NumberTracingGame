@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea612d0276ceb74fb38493ea4b9ada7, type: 3}
+  m_Name: Number9Config
+  m_EditorClassIdentifier: 
+  numberName: 2
+  backgroundImage: {fileID: 21300000, guid: 51a055d94b9336242ba1fd4201fc94f5, type: 3}
+  strokes:
+  - controlPoints:
+    - position: {x: 394.3, y: 244.2}
+      weight: 1
+    - position: {x: 402.1, y: 101.9}
+      weight: 1
+    - position: {x: 257.9, y: 46.3}
+      weight: 1
+    - position: {x: 136.1, y: 108.2}
+      weight: 1
+    - position: {x: 87.6, y: 211.3}
+      weight: 1
+    - position: {x: 101.9, y: 351.2}
+      weight: 1
+    - position: {x: 206.6, y: 410.1}
+      weight: 1
+    - position: {x: 328.1, y: 363.6}
+      weight: 1
+    - position: {x: 371.1, y: 310}
+      weight: 1
+    - position: {x: 395, y: 243.7}
+      weight: 1
+    degree: 3
+    wobbleRadius: 40
+    strokeColor: {r: 0, g: 0, b: 0, a: 1}
+    progressColor: {r: 0, g: 1, b: 0, a: 1}
+    completedColor: {r: 1, g: 0.5, b: 0, a: 0.8}
+    wobbleColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
+  - controlPoints:
+    - position: {x: 395, y: 240.9}
+      weight: 1
+    - position: {x: 399.4, y: 386.4}
+      weight: 1
+    - position: {x: 234.1, y: 555.6}
+      weight: 1
+    - position: {x: 93.8, y: 559}
+      weight: 1
+    degree: 3
+    wobbleRadius: 40
+    strokeColor: {r: 0, g: 0, b: 0, a: 1}
+    progressColor: {r: 0, g: 1, b: 0, a: 1}
+    completedColor: {r: 1, g: 0.5, b: 0, a: 0.8}
+    wobbleColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
+  scoreValue: 1

@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea612d0276ceb74fb38493ea4b9ada7, type: 3}
+  m_Name: Number5Config
+  m_EditorClassIdentifier: 
+  numberName: 2
+  backgroundImage: {fileID: 21300000, guid: 91806f535d31a2344a36cb91e3070939, type: 3}
+  strokes:
+  - controlPoints:
+    - position: {x: 198.7, y: 83.9}
+      weight: 1
+    - position: {x: 180.6, y: 143.5}
+      weight: 1
+    - position: {x: 163.1, y: 199.1}
+      weight: 1
+    - position: {x: 135.4, y: 291}
+      weight: 1
+    degree: 3
+    wobbleRadius: 40
+    strokeColor: {r: 0, g: 0, b: 0, a: 1}
+    progressColor: {r: 0, g: 1, b: 0, a: 1}
+    completedColor: {r: 1, g: 0.5, b: 0, a: 0.8}
+    wobbleColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
+  - controlPoints:
+    - position: {x: 195.2, y: 82.4}
+      weight: 1
+    - position: {x: 220.7, y: 89.8}
+      weight: 1
+    - position: {x: 317.8, y: 84.4}
+      weight: 1
+    - position: {x: 378.8, y: 83.7}
+      weight: 1
+    degree: 3
+    wobbleRadius: 40
+    strokeColor: {r: 0, g: 0, b: 0, a: 1}
+    progressColor: {r: 0, g: 1, b: 0, a: 1}
+    completedColor: {r: 1, g: 0.5, b: 0, a: 0.8}
+    wobbleColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
+  - controlPoints:
+    - position: {x: 140.2, y: 289.7}
+      weight: 1
+    - position: {x: 226.8, y: 209.3}
+      weight: 1
+    - position: {x: 377.8, y: 277.6}
+      weight: 1
+    - position: {x: 389.1, y: 416.3}
+      weight: 1
+    - position: {x: 358.4, y: 524.4}
+      weight: 1
+    - position: {x: 260.9, y: 593.4}
+      weight: 1
+    - position: {x: 148, y: 578}
+      weight: 1
+    - position: {x: 80.5, y: 507.5}
+      weight: 1
+    degree: 3
+    wobbleRadius: 40
+    strokeColor: {r: 0, g: 0, b: 0, a: 1}
+    progressColor: {r: 0, g: 1, b: 0, a: 1}
+    completedColor: {r: 1, g: 0.5, b: 0, a: 0.8}
+    wobbleColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.5}
+  scoreValue: 1

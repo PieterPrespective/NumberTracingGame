@@ -1,0 +1,10 @@
+- IssueID = PNTG-Story-002
+- Target Folder = Assets/PNTG
+- Please read 'Claude_Prompts/PNTGBasePrompt.md' for project context
+- Please refactor the demo created in PNTG-Story-001 (see chroma database) to a game
+	- Using the 'Number 2 Demo Controller' as a basis - please refactor it to the 'Number Tracing Game App Controller'
+	- Instead of just 1 Number config, allow the user to set a list of Number Configs (1 for each number as an option in the game)
+	- Keep the 'Show Control Points' and 'Auto Reload Config' settings (we'll still need them for setting up the other numbers)
+	- When a number is fully traced, please show an ingame popup for 3 seconds with the message 'Number Complete!'
+	- Add a score counter to the HUD - add 1 point after each successfully traced number 
+	- Add an 'X' button to the top-right of the HUD which invokes Application.Quit
